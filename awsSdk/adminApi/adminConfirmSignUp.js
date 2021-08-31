@@ -15,4 +15,4 @@ const adminConfirmSignUp = (email) => {
     });
 }
 
-adminConfirmSignUp('atul.thorat@blazeclan.com')
+adminConfirmSignUp('atul.thorat@gmail.com')

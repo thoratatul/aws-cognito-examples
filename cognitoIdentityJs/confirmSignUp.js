@@ -23,4 +23,4 @@ const confirmRegistration = (email, verificationCode) => {
 	});
 }
 
-confirmRegistration('atul.thorat@blazeclan.com', '629947')
+confirmRegistration('atul.thorat@gmail.com', '629947')

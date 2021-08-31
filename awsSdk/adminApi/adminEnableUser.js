@@ -14,4 +14,4 @@ const adminEnableUser = (email) => {
     });
 }
 
-adminEnableUser('atul.thorat@blazeclan.com')
+adminEnableUser('atul.thorat@gmail.com')

@@ -27,4 +27,4 @@ const signIn = (email, password) => {
     });     
 }
 
-signIn('atul.thorat@blazeclan.com', 'Test@123')
+signIn('atul.thorat@gmail.com', 'Test@123')

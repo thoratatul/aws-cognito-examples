@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {cognitoidentityserviceprovider} = require('./../lib/initAWS');
+const {cognitoidentityserviceprovider} = require('../../lib/initAWS');
 
 // Refer : https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#confirmForgotPassword-property
 const confirmForgotPassword = (email, password, verificationCode) => {
@@ -16,4 +16,4 @@ const confirmForgotPassword = (email, password, verificationCode) => {
     });
 }
 
-confirmForgotPassword('atul.thorat@blazeclan.com', 'Cognito23@#', '967373')
+confirmForgotPassword('atul.thorat@gmail.com', 'Cognito23@#', '967373')

@@ -17,4 +17,4 @@ const confirmSignUp = (email, verificationCode) => {
     });
 }
 
-confirmSignUp('atul.thorat@blazeclan.com', '154361')
+confirmSignUp('atul.thorat@gmail.com', '154361')

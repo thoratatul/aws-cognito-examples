@@ -31,4 +31,4 @@ const adminCreateUser = (email, password) => {
     });
 }
 
-adminCreateUser('atul.thorat@blazeclan.com', 'Test@123')
+adminCreateUser('atul.thorat@gmail.com', 'Test@123')
