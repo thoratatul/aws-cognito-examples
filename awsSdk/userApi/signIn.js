@@ -2,7 +2,8 @@ require('dotenv').config();
 const {cognitoidentityserviceprovider} = require('../../lib/initAWS');
 
 const parseJwt = (token) => { // Or we can use jwt-decode npm package
-    return JSON.parse(Buffer.from(token.split('.')[1].replace('-', '+').replace('_', '/'), 'base64').toString('binary'));
+    const {  email, exp, auth_time , token_use, sub} = JSON.parse(Buffer.from(token.IdToken.split('.')[1].replace('-', '+').replace('_', '/'), 'base64').toString('binary'));
+    return {  token, email, exp, uid: sub, auth_time, token_use };
 };
 
 // Refer : https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#initiateAuth-property
@@ -21,10 +22,10 @@ const signIn = (email, password) => {
             return false
         }
 
-        const response = (data && data.ChallengeName) ? data : {...data, ...{userDetails: parseJwt(data.AuthenticationResult.IdToken)}}
+        const response = (data && data.ChallengeName) ? data : parseJwt(data.AuthenticationResult)
         console.log(response);
         return response;
     });     
 }
 
-signIn('atul.thorat@gmail.com', 'Test@123')
+signIn('atul.thorat@blazeclan.com', 'Test@123')
