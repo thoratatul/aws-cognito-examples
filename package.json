@@ -6,9 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "api",
+    "amazon",
+    "aws",
+    "cognito"
+  ],
+  "author": "Atul N Thorat",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thoratatul/aws-cognito-examples.git"
+  },
   "dependencies": {
     "amazon-cognito-identity-js": "^5.1.0",
     "aws-sdk": "^2.979.0",
