@@ -29,4 +29,4 @@ const signUp = (email, password) => {
   });
 };
 
-signUp("atul.thorat@gmail.com", "Test@123");
+signUp("atul.thorat@blazeclan.com", "Test@123");

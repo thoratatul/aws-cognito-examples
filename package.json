@@ -21,6 +21,8 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^5.1.0",
     "aws-sdk": "^2.979.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5"
   }
 }

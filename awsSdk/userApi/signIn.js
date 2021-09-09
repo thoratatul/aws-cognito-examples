@@ -35,4 +35,4 @@ const signIn = (email, password) => {
   });
 };
 
-signIn("atul.thorat@gmail.com", "Cognito23@#");
+signIn("atul.thorat@blazeclan.com", "Test@123");

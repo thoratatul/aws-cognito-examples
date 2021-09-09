@@ -13,4 +13,4 @@ const adminDeleteUser = (email) => {
   });
 };
 
-adminDeleteUser("atul.thorat@gmail.com");
+adminDeleteUser("atul.thorat@blazeclan.com");

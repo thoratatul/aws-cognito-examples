@@ -18,4 +18,4 @@ const confirmForgotPassword = (email, password, verificationCode) => {
   );
 };
 
-confirmForgotPassword("atul.thorat@gmail.com", "Cognito23@#", "362608");
+confirmForgotPassword("atul.thorat@blazeclan.com", "Test23@#", "948598");

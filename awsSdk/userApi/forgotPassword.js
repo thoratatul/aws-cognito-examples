@@ -14,4 +14,4 @@ const forgotPassword = (email) => {
   });
 };
 
-forgotPassword("atul.thorat@gmail.com");
+forgotPassword("atul.thorat@blazeclan.com");

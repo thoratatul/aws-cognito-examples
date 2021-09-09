@@ -3,7 +3,7 @@ const { cognitoidentityserviceprovider } = require("../../lib/initAWS");
 
 // Refer : https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#adminCreateUser-property
 const adminCreateUser = (email, password) => {
-  var params = {
+  const params = {
     UserPoolId: process.env.AWS_COGNITO_USER_POOL_ID /* required */,
     TemporaryPassword: password /* required */,
     Username: email /* required */,
@@ -30,4 +30,4 @@ const adminCreateUser = (email, password) => {
   });
 };
 
-adminCreateUser("atul.thorat@gmail.com", "Test@123");
+adminCreateUser("atul.thorat@blazeclan.com", "Test@123");

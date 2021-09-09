@@ -2,12 +2,12 @@ require("dotenv").config();
 const { cognitoidentityserviceprovider } = require("../../lib/initAWS");
 
 // Refer : https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html#adminCreateUser-property
-const adminConfirmSignUp = (email) => {
+const adminResetUserPassword = (email) => {
   var params = {
     UserPoolId: process.env.AWS_COGNITO_USER_POOL_ID /* required */,
     Username: email /* required */,
   };
-  cognitoidentityserviceprovider.adminConfirmSignUp(
+  cognitoidentityserviceprovider.adminResetUserPassword(
     params,
     function (err, data) {
       if (err) console.log(err, err.stack);
@@ -17,4 +17,4 @@ const adminConfirmSignUp = (email) => {
   );
 };
 
-adminConfirmSignUp("atul.thorat@blazeclan.com");
+adminResetUserPassword("atul.thorat@blazeclan.com");

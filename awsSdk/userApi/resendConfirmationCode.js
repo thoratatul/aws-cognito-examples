@@ -17,4 +17,4 @@ const resendConfirmationCode = (email, password) => {
   );
 };
 
-resendConfirmationCode("atul.thorat@gmail.com", "Test@123");
+resendConfirmationCode("atul.thorat@blazeclan.com", "Test@123");
